@@ -40,20 +40,20 @@
 
 		<div id="settings" class="view">
 		  <form id="settings_form">
-		    <fieldset>
+		    <fieldset id="map_type">
 		      <legend>Map Type</legend>
-			  <input type="radio" name="map" value="roadmap" checked>Road Map<br/>
-		      <input type="radio" name="map" value="satellite">Satellite<br/>
-		      <input type="radio" name="map" value="terrain">Terrain<br/>
-		      <input type="radio" name="map" value="hybrid">Hybrid<br/>
+		        <div><input type="radio" name="map" id="map_r" value="roadmap" checked><label for="map_r">Road Map</label></div>
+                        <div><input type="radio" name="map" id="map_s" value="satellite"><label for="map_s">Satellite</label></div>
+                        <div><input type="radio" name="map" id="map_t" value="terrain"><label for="map_t">Terrain</label></div>
+                        <div><input type="radio" name="map" id="map_h" value="hybrid"><label for="map_h">Hybrid</label></div>
 		    </fieldset>
-		    <fieldset>
+		    <fieldset id="map_zoom">
 		      <legend>Zoom Level</legend>
-  		      <input type="radio" name="zoom" value="10">Super Far<br/>
-  		      <input type="radio" name="zoom" value="12">Far<br/>
-  		      <input type="radio" name="zoom" value="15" checked>Normal<br/>
-  		      <input type="radio" name="zoom" value="18">Close<br/>
-  		      <input type="radio" name="zoom" value="20">Super Close<br/>
+		        <div><input type="radio" name="zoom" value="10" id="zoom_10"><label for="zoom_10">Super Far</label></div>
+		        <div><input type="radio" name="zoom" value="10" id="zoom_12"><label for="zoom_12">Far</label></div>
+		        <div><input type="radio" name="zoom" value="10" id="zoom_15" checked><label for="zoom_15">Normal</label></div>
+		        <div><input type="radio" name="zoom" value="10" id="zoom_18"><label for="zoom_18">Close</label></div>
+		        <div><input type="radio" name="zoom" value="10" id="zoom_20"><label for="zoom_20">Super Close</label></div>
   		     </fieldset>
 		      <button id="save_button">Save</button>
 	      </form>
